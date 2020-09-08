@@ -12,4 +12,4 @@ do {
 } while (input !== null);
 
 alert(`Общая сумма чисел равна ${total}`);
-console.log('total:', total);
+console.log(total);

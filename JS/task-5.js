@@ -19,6 +19,6 @@ switch (country.toLowerCase()) {
     break;
   default:
     alert('В вашей стране доставка не доступна');
+    console.log(prise);
+    console.log(country);
 }
-console.log(prise);
-console.log(country);
