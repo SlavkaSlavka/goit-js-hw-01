@@ -17,10 +17,12 @@
 
 let country;
 let price;
-country = prompt('Страна?').toLowerCase(country);
-
-
-switch (country) {
+country = prompt('Страна?');
+if (country === null || country === '') {
+  price = 'Пользователь не ввёл значение';
+}
+else {
+switch (country.toLowerCase(country)) {
   case  'китай' :
     price = `Доставка в ${country} будет стоить 100 кредитов`;
     break;
@@ -37,5 +39,6 @@ switch (country) {
           price = `Доставка в ${country} будет стоить 120 кредитов`;
           break
   default: price = 'В вашей стране доставка не доступна';
+}
 }
 console.log (price);
